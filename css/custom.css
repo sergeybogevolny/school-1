@@ -1,0 +1,386 @@
+.fc-button-month {
+  display: none;
+}
+.fc-button-agendaWeek {
+  display: none;
+}
+.fc-button-agendaDay {
+  display: none;
+}
+.fc-button-today {
+  display: none;
+}
+
+#dir{
+margin: 15px auto;
+border: 1px solid #CFCFCF;
+padding: 15px;
+text-align: left;
+overflow: auto;
+}
+
+#dir li{ margin: 14px 0 14px 25px; font-size: 1.2em;}
+
+#dir li.subdir{ list-style-image: url('../img/folder_blue.png'); font-size: 1.4em; background: #EFEFEF; padding: 5px; border-bottom: 1px solid #CFCFCF;}
+#dir li.subdir a{ text-decoration: none;}
+
+#dir li.subdir ul{ font-weight: normal; font-size: 0.85em; }
+
+#dir .images li.file{ float: left; }
+#dir .images li.subdir{ clear: left; }
+
+#dir li.file{ list-style-image: url('../img/document_blank.png');  }
+#dir li.doc{ list-style-image: url('../img/file_doc.png'); }
+#dir li.mp3{ list-style-image: url('../img/file_mp3.png'); }
+#dir li.pdf{ list-style-image: url('../img/file_pdf.png'); }
+#dir li.ppt{ list-style-image: url('../img/file_ppt.png'); }
+#dir li.txt{ list-style-image: url('../img/file_txt.png'); }
+#dir li.xls{ list-style-image: url('../img/file_xls.png'); }
+
+.datepicker{z-index: 80010 !important;}
+
+.theme-blue .calendar .fc-content .event-type-court .fc-event-inner {
+  background-color:#368ee0;
+  background-image: url(../img/task_court_white.png);
+  background-position: 5px 2px;
+  background-repeat: no-repeat;
+}
+.theme-blue .calendar .fc-content .event-type-payment .fc-event-inner {
+  background-color:#f8a31f ;
+  background-image: url(../img/task_payment_white.png);
+  background-position: 5px 2px;
+  background-repeat: no-repeat;
+}
+
+.tagbox li .delete {
+  position: absolute;
+  font-family: Arial, sans-serif;
+  font-weight:bold;
+  right: 7px;
+  top: 4px;
+  color: #fff;
+
+  width: 12px;
+  font-size: 11px;
+  line-height: 12px;
+  height: 12px;
+
+  z-index: 100;
+  cursor: pointer;
+  background-color:#368ee0;
+
+
+}
+
+.tagbox .selected .tag {
+  background: red;
+}
+
+.tagbox .selected .delete {
+    background-color: red;
+}
+
+.fc-event-title {
+	margin-left: 20px;
+}
+
+.autocomplete{z-index: 80010 !important;}
+
+
+.taglist {
+  position: relative;
+  overflow: hidden;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: #fff 0px 1px 0px;
+  -moz-box-shadow: #fff 0px 1px 0px;
+  box-shadow: #fff 0px 1px 0px;
+}
+.taglist * {
+  margin: 0;
+  padding: 0;
+}
+.taglist.focus{
+  outline: 0;
+}
+.taglist ul {
+  overflow: hidden;
+  padding: 10px 10px 6px 10px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: rgba(0,0,0,.07) 0px 2px 4px inset;
+  -moz-box-shadow: rgba(0,0,0,.07) 0px 2px 4px inset;
+  box-shadow: rgba(0,0,0,.07) 0px 2px 4px inset;
+}
+.taglist li {
+  position: relative;
+  list-style: none;
+  float: left;
+  margin: 0 4px 4px 0;
+}
+.taglist li .tag {
+  position: relative;
+  display: block;
+  background: #368ee0;
+  color: #fff;
+  border-radius: 0px;
+  height: 20px;
+  line-height: 20px;
+  font-size-adjust: 100%;
+  font-size: 12px;
+  padding: 0 12px 0 12px;
+  vertical-align: middle;
+}
+
+#jqxCalendar-account .jqx-calendar-cell-today
+{
+    color: #898989;
+    background-color: #FFFF99;
+    border: 1px solid #FFFF99;
+    margin: 0 0 0 0;
+    cursor: pointer;
+}
+
+#jqxCalendar-account .jqx-calendar-cell-specialDate
+{
+    color: #FFFFFF;
+    background-color: #009933;
+    border: 1px solid #009933;
+    margin: 0 0 0 0;
+    cursor: pointer;
+}
+
+
+.smarty-tag{
+    display:none !important;
+}
+
+.autocomplete-suggestions { border: 1px solid #999; background: #FFF; cursor: default; overflow: auto; -webkit-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); -moz-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); }
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
+
+.timeline > li .timeline-content .left .icon.grey {
+    background: none repeat scroll 0 0 #777777;
+}
+
+.bootstrap-timepicker-widget table td input {
+    margin: 0;
+    text-align: center;
+    width: 40px !important;
+}
+
+.stats > li span.count {
+  font-size: 36px;
+  color: white;
+  float: left;
+  margin: 10px;
+}
+
+.stats > li.button {
+  *zoom: 1;
+  float: left;
+  padding: 0;
+  margin-right: 5px;
+}
+.stats > li.button:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.stats > li.button:last-child {
+  margin-right: 0;
+}
+.stats > li.button i {
+  font-size: 36px;
+  color: white;
+  float: left;
+  margin: 0;
+  padding: 6px 6px 7px 6px;
+}
+.stats > li.button img {
+  color: white;
+  float: left;
+  margin: 0;
+  padding: 9px 6px 9px 6px;
+}
+
+.stats > li.menubutton {
+  *zoom: 1;
+  float: left;
+  padding: 0;
+  margin-right: 5px;
+}
+.stats > li.menubutton:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.stats > li.menubutton:last-child {
+  margin-right: 0;
+}
+.stats > li.menubutton a.menubutton-main {
+  float: left;
+  margin: 0;
+  padding: 9px 11px 11px 11px;
+}
+.stats > li.menubutton span.count {
+  font-size: 36px;
+  color: white;
+  float: left;
+  margin: 10px;
+}
+.stats > li.menubutton .details {
+  *zoom: 1;
+  margin-left: 55px;
+}
+.stats > li.menubutton .details:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.stats > li.menubutton .details span {
+  color: white;
+  display: block;
+  font-size: 12px;
+  text-align: left;
+}
+.stats > li.menubutton .details span.big {
+  font-size: 16px;
+}
+
+.stats > li.menu {
+  *zoom: 1;
+  float: left;
+  padding: 0;
+  /*padding: 10px 15px;*/
+  margin-right: 5px;
+}
+.stats > li.menu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.stats > li.menu:last-child {
+  margin-right: 0;
+}
+.stats > li.menu i {
+  font-size: 36px;
+  color: white;
+  float: left;
+  margin: 0;
+  padding: 6px 6px 7px 6px;
+}
+.stats > li.menu img {
+  color: white;
+  float: left;
+  margin: 0;
+  padding: 9px 6px 9px 6px;
+}
+
+#client-menu{
+  display: none;
+}
+
+.dropdown-menu{z-index: 80010 !important;}
+
+.select2-drop{z-index: 80010 !important;}
+
+.stats > li.extend {
+  *zoom: 1;
+  float: left;
+  padding: 10px 10px;
+  margin-right: 5px;
+}
+
+.stats > li.extend img {
+  color: white;
+  float: left;
+  margin-top: -5px;
+  padding: 9px 6px 4px 6px;
+}
+
+.tiles > li.extend img {
+  color: white;
+  float: left;
+  margin-top: -5px;
+  margin-left: 75px;
+}
+
+
+.dataTables_wrapper .dataTables_filter input {
+    height: 30px;
+ }
+
+tr.bookmarked {
+    background: #fad8d8;
+}
+
+.dataTables_filter{ display:none;}
+
+.DTTT_button_copy {
+  display: none !important;
+}
+.DTTT_button_csv {
+  display: none !important;
+}
+.DTTT_button_print {
+  display: none !important;
+}
+
+.DTTT_button_pdf{
+background: #EEEEEE url(../img/tabletools_pdf.png) no-repeat !important;
+background-position:10% center !important;
+}
+
+.DTTT_button_xls{
+background: #EEEEEE url(../img/tabletools_excel.png) no-repeat !important;
+background-position:10% center !important;
+}
+button.DTTT_button, div.DTTT_button, a.DTTT_button {
+
+    padding: 5px 27px !important;
+}
+
+.DTTT_button span{margin-left:10px;}
+
+.jqx-input-content{
+  height:30px !important;
+}
+
+.color_uncertain{background:#FF0 !important;}
+.color_thumbs-down{background:#F00 !important;}
+.color_thumbs-down{background:#0F3 !important;}
+
+
+.theme-blue .calendar .fc-content .calender-type-court .fc-event-inner {
+  color:#fff;
+  background-color:#368EE0;
+  background-repeat: no-repeat;
+    
+}
+.theme-blue .calendar .fc-content .calender-type-payment .fc-event-inner {
+  color:#fff;
+  background-color:#368EE0 ;
+  background-repeat: no-repeat;
+  
+}
+
+
+#navigation #brand-less {
+    color: #FFFFFF;
+    float: left;
+    font-size: 20px;
+    margin-top: 9px;
+    padding-bottom: 2px;
+    padding-left: 30px;
+    padding-right: 69px;
+}
+
+.odd1{background:#EFEFEF;}
+.even1{background:#DCEBF9;}
+.dashbord{padding:7px 0 !important;}

@@ -1,0 +1,5 @@
+<p style="background-color:red;">this is a tests22ww and <strong>more<img alt="enlightened" height="20" src="http://localhost/porto/flat/js/plugins/ckeditor/plugins/smiley/images/lightbulb.gif" title="enlightened" width="20" /></strong></p>
+
+<p>&nbsp;</p>
+
+<p><em><strong>this ia a newsletter</strong></em></p>
