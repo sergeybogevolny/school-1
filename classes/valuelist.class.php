@@ -26,7 +26,7 @@ class Valuelist extends Generic {
     private function list_studentname() {
 
         global $generic;
-        $sql = 'SELECT id, student_firstname, student_middlename,student_lastname FROM student_detail';
+        $sql = 'SELECT id, student_firstname, student_middlename,student_lastname FROM student_detail GROUP BY student_firstname, student_middlename,student_lastname';
 	    $query = $generic->query($sql);
         if( $query->rowCount() < 1 ) {
             echo '[]';
@@ -41,7 +41,7 @@ class Valuelist extends Generic {
     private function list_label() {
 
         global $generic;
-        $sql = 'SELECT id, label FROM student_detail';
+        $sql = 'SELECT id, label FROM student_detail GROUP BY label';
 	    $query = $generic->query($sql);
         if( $query->rowCount() < 1 ) {
             echo '[]';
@@ -57,7 +57,7 @@ class Valuelist extends Generic {
     private function list_fathername() {
 
         global $generic;
-        $sql = 'SELECT id, father_firstname, father_middlename, father_lastname FROM student_detail';
+        $sql = 'SELECT id, father_firstname, father_middlename, father_lastname FROM student_detail GROUP BY father_firstname, father_middlename, father_lastname';
 	    $query = $generic->query($sql);
         if( $query->rowCount() < 1 ) {
             echo '[]';

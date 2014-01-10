@@ -43,6 +43,9 @@ $(document).ready(function() {
 		});
     }
 	
+	
+                var oTable = $('.dataTable_1').dataTable();
+	            oTable.fnClearTable();
 });
 
 
@@ -124,14 +127,14 @@ function GoSearch(){
                 var rec = jsonData[i];
 				
                     $('#search-table').dataTable().fnAddData([
-                        '<input type="checkbox" name="check" value="1">',
+                        '<img src='+rec.image+' />',
                         rec.name,
                         rec.fname,
     		            rec.created,
                         rec.class,
                         rec.section,
                     ]);
-                    $('#search-table').attr('id',rec.id);
+                    $('#search-table tr:last').attr('id',rec.id);
 				
 				
 			}

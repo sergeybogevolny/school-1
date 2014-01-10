@@ -631,8 +631,8 @@ if ($title=='dashboard' && $label=='production'){
 
 				</ul>
 				<div class="dropdown">
-<?php /*?>					<a href="#" class='dropdown-toggle' data-toggle="dropdown"><?php echo $_SESSION['nware']['username']; ?> <img src="documents/avatar/<?php echo $_SESSION['nware']['user_id']; ?>/<?php echo $_SESSION['nware']['avatar']; ?>" alt="" width="25" height="25" style="width:25px; height:25px;"></a>
-<?php */?>					<ul class="dropdown-menu pull-right">
+					<a href="#" class='dropdown-toggle' data-toggle="dropdown"><?php echo $_SESSION['nware']['username']; ?> <img src="documents/avatar/<?php echo $_SESSION['nware']['user_id']; ?>/<?php echo $_SESSION['nware']['avatar']; ?>" alt="" width="25" height="25" style="width:25px; height:25px;"></a>
+					<ul class="dropdown-menu pull-right">
 						<li>
 							<a href="#" onClick="goLiveHelp()">Live Help</a>
 						</li>
